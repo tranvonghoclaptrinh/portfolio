@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Projects - Trần Hữu Vọng</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Tag trạng thái */
+        .project-tag.engine-unity { background: #000; color: #fff; border: 1px solid #fff; }
+        .project-tag.algo-a { background: #ff4757; color: #fff; }
+        .project-tag.poke-api { background: #ffcb05; color: #2a75bb; font-weight: bold; }
+
+        /* ==== BUTTON GROUP ==== */
+        .project-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+            flex-wrap: wrap;
+        }
+
+        .repo-btn {
+            background: transparent;
+            border: 1px solid #ff2d75;
+            color: #ff2d75;
+        }
+
+        .repo-btn:hover {
+            background: #ff2d75;
+            color: #fff;
+            box-shadow: 0 0 12px #ff2d75;
+        }
+    </style>
+</head>
+
+<body class="dark-theme">
+
+<header class="navbar">
+    <a href="../index.html" class="logo-link">
+        <div class="logo">PORTFOLIO</div>
+    </a>
+
+    <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../education.html">Education</a>
+        <a href="../about.html">About</a>
+    </nav>
+
+    <div class="nav-icons">
+        <div class="user-trigger" id="avatarBtn">
+            <img id="currentNavAvatar" src="../img/my_self.png" alt="Avatar">
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="projects-section">
+<h2 class="section-title">Dự Án Game</h2>
+
+<div class="projects-container">
+
+<!-- ================= DINO ================= -->
+<div class="project-card">
+    <div class="project-header">
+        <h3>DinoSaur Game</h3>
+        <span class="project-tag engine-unity">Unity & C#</span>
+    </div>
+
+    <p class="project-description">
+        Dự án game đầu tay lấy cảm hứng từ "khủng long mất mạng" trên Chrome.
+        Game được phát triển trên Unity Engine, logic C#.
+    </p>
+
+    <div class="project-tech">
+        <span class="tech-badge">Unity</span>
+        <span class="tech-badge">C#</span>
+        <span class="tech-badge">Endless Runner</span>
+    </div>
+
+    <div class="project-actions">
+        <a href="https://tranvonghoclaptrinh.github.io/DinoSaurGame/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="project-link">
+            Chơi thử <i class='bx bx-export'></i>
+        </a>
+
+        <a href="https://github.com/tranvonghoclaptrinh/DinoSaurGame" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="project-link repo-btn">
+            Xem Repo <i class='bx bxl-github'></i>
+        </a>
+    </div>
+</div>
+
+<!-- ================= PIPE ================= -->
+<div class="project-card">
+    <div class="project-header">
+        <h3>PIPEMaster</h3>
+        <span class="project-tag algo-a">Thuật toán A*</span>
+    </div>
+
+    <p class="project-description">
+        Game giải đố trên ma trận 20x20 áp dụng thuật toán tìm đường A*. 
+        Trải nghiệm cơ chế "All in" phá vật cản ngẫu nhiên dựa trên túi tiền.
+    </p>
+
+    <div class="project-tech">
+        <span class="tech-badge">A* Algorithm</span>
+        <span class="tech-badge">Matrix 20x20</span>
+        <span class="tech-badge">Logic Game</span>
+    </div>
+
+    <div class="project-actions">
+        <a href="https://tranvonghoclaptrinh.github.io/PIPEMaster/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="project-link">
+            Vào giải đố <i class='bx bx-export'></i>
+        </a>
+
+        <a href="https://github.com/tranvonghoclaptrinh/PIPEMaster" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="project-link repo-btn">
+            Xem Repo <i class='bx bxl-github'></i>
+        </a>
+    </div>
+</div>
+
+<!-- ================= POKEMON ================= -->
+<div class="project-card">
+    <div class="project-header">
+        <h3>Pokemon Arena</h3>
+        <span class="project-tag poke-api">Fan-made Pixel</span>
+    </div>
+
+    <p class="project-description">
+        Game Turn-based Battle lấy dữ liệu từ PokeAPI (Gen 1-4).
+        Tích hợp Dynamax, hiệu ứng map và kỹ năng nộ đặc biệt.
+    </p>
+
+    <div class="project-tech">
+        <span class="tech-badge">PokeAPI</span>
+        <span class="tech-badge">JavaScript</span>
+        <span class="tech-badge">Turn-based</span>
+    </div>
+
+    <div class="project-actions">
+        <a href="https://tranvonghoclaptrinh.github.io/PokemonArena/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="project-link">
+            Chiến đấu ngay <i class='bx bx-export'></i>
+        </a>
+
+        <a href="https://github.com/tranvonghoclaptrinh/PokemonArena" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="project-link repo-btn">
+            Xem Repo <i class='bx bxl-github'></i>
+        </a>
+    </div>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="footer-bottom">
+        <p>&copy; 2024 Trần Hữu Vọng. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
