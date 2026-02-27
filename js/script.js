@@ -86,3 +86,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.querySelectorAll(".project-card").forEach(card=>{
+    card.addEventListener("click",()=>{
+        card.classList.toggle("open");
+    });
+});
+const cards = document.querySelectorAll(".language-card");
+const overlay = document.getElementById("languageOverlay");
+
+cards.forEach(card => {
+
+    card.addEventListener("click", e => {
+
+        if(card.classList.contains("active")) return;
+
+        cards.forEach(c => c.classList.remove("active"));
+
+        card.classList.add("active");
+        overlay.classList.add("show");
+
+        e.stopPropagation();
+    });
+
+});
+
+overlay.addEventListener("click", () => {
+
+    document
+        .querySelectorAll(".language-card.active")
+        .forEach(c => c.classList.remove("active"));
+
+    overlay.classList.remove("show");
+
+});
