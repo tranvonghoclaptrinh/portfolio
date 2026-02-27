@@ -1,18 +1,25 @@
 :root {
+    --pattern-color: rgba(233, 30, 99, 0.15);
+
     --bg-main: #0f0f1b;
     --bg-card: #1c1c36;
+
     --text-primary: #ffffff;
     --text-secondary: #94a3b8;
+
     --border: #2e2e4f;
     --accent: #e91e63;
     --hover: #2d2d5a;
 }
-
 .light-theme {
+    --pattern-color: rgba(0, 0, 0, 0.12);
+
     --bg-main: #f1f5f9;
     --bg-card: #ffffff;
+
     --text-primary: #1e293b;
     --text-secondary: #64748b;
+
     --border: #e2e8f0;
     --hover: #f1f5f9;
 }
@@ -459,7 +466,7 @@ img {
 .dropdown-container.show { display: block; }
 .divider { height: 1px; background: var(--border); margin: 15px 0; }
 .account-card { display: flex; align-items: center; gap: 10px; }
-.account-card img { width: 40px; height: 40px; border-radius: 50%; }
+.account-card img { width: 40px; height: 40px; border-radius: 50%;object-fit: cover;flex-shrink: 0;display: block; }
 
 /* Container chung cho mục Logout */
 .logout-btn {
@@ -610,7 +617,8 @@ input:checked + .slider:before { transform: translateX(18px); }
 }
 
 .project-card {
-    background: var(--bg-card);
+     background: var(--bg-card);
+    border: 1px solid var(--border);
     padding: 25px;
     border-radius: 15px;
     border: 1px solid var(--border);
@@ -632,7 +640,9 @@ input:checked + .slider:before { transform: translateX(18px); }
     font-size: 1.3rem;
     color: var(--text-primary);
 }
-
+.project-header p{
+    color: var(--text-secondary);
+}
 .project-tag {
     padding: 5px 12px;
     background: var(--accent);
@@ -1427,6 +1437,7 @@ input:checked + .slider:before { transform: translateX(18px); }
     margin-bottom: 40px;
     font-size: 2.5rem;
     text-shadow: 0 0 15px var(--accent);
+    color: var(--text-primary);
 }
 
 .light-theme .section-title {
@@ -1526,3 +1537,33 @@ input:checked + .slider:before { transform: translateX(18px); }
     background: #ff2d75;
     color: #fff;
 }
+/* Tag trạng thái */
+.project-tag.engine-unity { background: #000; color: #fff; border: 1px solid #fff; }
+.project-tag.algo-a { background: #ff4757; color: #fff; }
+.project-tag.poke-api { background: #ffcb05; color: #2a75bb; font-weight: bold; }
+
+/* ==== BUTTON GROUP ==== */
+.project-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+}
+
+.repo-btn {
+    background: transparent;
+    border: 1px solid #ff2d75;
+    color: #ff2d75;
+}
+
+.repo-btn:hover {
+    background: #ff2d75;
+    color: #fff;
+    box-shadow: 0 0 12px #ff2d75;
+}
+/* Thêm một chút style bổ trợ cho các nhãn trạng thái */
+.project-tag.maintenance { background: #f39c12; color: #fff; }
+.project-tag.updating { background: #3498db; color: #fff; white-space: nowrap;flex-shrink: 0; }
+.disabled-link { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
+/* Style cho nhãn QA và các dự án bổ trợ */
+.project-tag.qa { background: #6c5ce7; color: #fff; }
