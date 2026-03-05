@@ -1564,6 +1564,9 @@ input:checked + .slider:before { transform: translateX(18px); }
 /* Thêm một chút style bổ trợ cho các nhãn trạng thái */
 .project-tag.maintenance { background: #f39c12; color: #fff; }
 .project-tag.updating { background: #3498db; color: #fff; white-space: nowrap;flex-shrink: 0; }
+.project-tag.frontend { background: #000000; color: #fff; white-space: nowrap;flex-shrink: 0; }
+.project-tag.backend { background: #ff00bb; color: #fff; white-space: nowrap;flex-shrink: 0; }
+.project-tag.fullstack { background: #00ff99; color: #000; white-space: nowrap;flex-shrink: 0; }
 .disabled-link { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
 /* Style cho nhãn QA và các dự án bổ trợ */
 .project-tag.qa { background: #6c5ce7; color: #fff; }
