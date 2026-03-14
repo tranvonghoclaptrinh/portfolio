@@ -626,6 +626,7 @@ input:checked + .slider:before { transform: translateX(18px); }
     display: flex;
     flex-direction: column;
     gap: 15px;
+    
 }
 
 .project-header {
@@ -657,6 +658,7 @@ input:checked + .slider:before { transform: translateX(18px); }
     margin: 0;
     font-size: 0.95rem;
     line-height: 1.5;
+    flex-grow: 1;
 }
 
 .project-tech {
