@@ -1,374 +1,994 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <!-- Primary Meta Tags -->
-    <title>Trần Hữu Vọng - Portfolio & CV | Software Engineering Student</title>
-    <meta name="description" content="Portfolio cá nhân của Trần Hữu Vọng - Sinh viên Công nghệ Phần mềm tại ĐHCT TP.HCM. Nắm vững C++, C#, Python, JavaScript, Node.js. Chuyên về web development, game development, và QA testing.">
-    <meta name="keywords" content="Trần Hữu Vọng, portfolio, CV, software engineer, developer, web development, game development, C++, Python, JavaScript, Node.js, React">
-    <meta name="author" content="Trần Hữu Vọng">
-    <meta name="creator" content="Trần Hữu Vọng">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://trandemo.com/">
-    <meta property="og:title" content="Trần Hữu Vọng - Portfolio & CV">
-    <meta property="og:description" content="Sinh viên Công nghệ Phần mềm - Nắm vững lập trình đa ngôn ngữ và phát triển ứng dụng web">
-    <meta property="og:image" content="https://trandemo.com/img/my_self.png">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://trandemo.com/">
-    <meta name="twitter:title" content="Trần Hữu Vọng - Portfolio & CV">
-    <meta name="twitter:description" content="Sinh viên Công nghệ Phần mềm - Nắm vững lập trình đa ngôn ngữ">
-    <meta name="twitter:image" content="https://trandemo.com/img/my_self.png">
-    
-    <!-- Theme Color -->
-    <meta name="theme-color" content="#e91e63">
-    <meta name="color-scheme" content="dark light">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="img/my_self.png">
-    <link rel="apple-touch-icon" href="img/my_self.png">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body class="dark-theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trần Hữu Vọng - Sinh viên CNTT & Portfolio cá nhân</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header class="navbar">
-        <a href="index.html" class="logo-link">
-        <div class="logo">PORTFOLIO</div>
+      <div class="navbar-container">
+        <a href="#home" class="navbar-brand">
+          <i class="bx bxs-circle"></i>
+          <span>PORTFOLIO</span>
         </a>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="education.html">Education</a>
-            <a href="about.html">About</a>
-        </nav>
-        <div class="nav-icons">
-            <div class="user-trigger" id="avatarBtn">
-                <img id="currentNavAvatar" src="img/my_self.png" alt="Avatar">
-            </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
-        <div class="dropdown-container" id="dropdownMenu">
-            <div class="menu-section">
-                <div class="theme-switch-wrapper">
-                    <span><i class='bx bx-sun'></i> Light Mode</span>
-                    <label class="switch">
-                        <input type="checkbox" id="themeToggle">
-                        <span class="slider"></span>
-                    </label>
-                </div>
-            </div>
-            
-            <div class="divider"></div>
-            <div class="menu-section">
-                <p class="section-label">Switch Account</p>
-                <div class="account-card account-item active" data-img="img/my_self.png" data-name="Trần Hữu Vọng" data-email="tranhuuvong23092006@gmail.com">
-                    <img src="img/my_self.png" alt="User">
-                    <div class="account-details">
-                        <span class="name">Trần Hữu Vọng</span>
-                        <span class="email">tranhuuvong23092006@gmail.com</span>
-                    </div>
-                    <div class="status-dot"></div>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="menu-section">
-                <div class="menu-item logout-btn" id="logoutBtn">
-                <i class='bx bx-log-out-circle'></i>
-                <span>Sign out</span>
-        </div>
-    </div>
-        </div>
+        <nav class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link">Trang Chủ</a>
+          <a href="#about" class="nav-link">Về Tôi</a>
+          <a href="#services" class="nav-link">Kỹ Năng</a>
+          <a href="#portfolio" class="nav-link">Dự Án</a>
+          <a href="#contact" class="nav-link">Liên Hệ</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="img/my_self.png" alt="Trần Hữu Vọng">
-                </div>
-                <div class="hero-text">
-                    <h1>Trần Hữu Vọng</h1>
-                    <p class="subtitle">Sinh viên Công nghệ Phần mềm</p>
-                    <div class="social-links">
-                        <i class='bx bxl-facebook-circle'></i>
-                        <i class='bx bxl-github'></i>
-                        <i class='bx bxl-linkedin-square'></i>
-                    </div>
-                </div>
+    <section id="home" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="greeting">
+            <h4>Xin chào, tôi là</h4>
+            <h1>Trần Hữu Vọng</h1>
+            <div class="typing-container">
+              <span class="typing-text"></span>
             </div>
-        </section>
+          </div>
 
-        <section class="skills-section">
-            <h2 class="section-title">Ngôn Ngữ & Công Nghệ</h2>
-            <div class="skills-container">
-                <div class="skill-card">
-                    <i class='bx bxl-c-plus-plus'></i>
-                    <span>C++</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon">C</span>
-                    <span>C</span>
-                </div>
-                <div class="skill-card">
-                    <span class="skill-icon">C#</span>
-                    <span>C#</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-python'></i>
-                    <span>Python</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-html5'></i>
-                    <span>HTML</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-css3'></i>
-                    <span>CSS</span>
-                </div>
-                <div class="skill-card">
-                    <i class='bx bxl-javascript'></i>
-                    <span>JavaScript</span>
-                </div>
+          <p class="hero-description">
+            Sinh viên năm 2 chuyên ngành Hệ thống thông tin (Khoa CNTT) tại Đại
+            học Công thương TP.HCM (HUIT). Tôi đang định hướng phát triển bản
+            thân ở vị trí Tester và Backend Engineer, với mục tiêu xa hơn là trở
+            thành Business Analyst (BA) và Solution Architect (SA).
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">
+              <i class="bx bxs-download"></i>
+              Tải CV
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="bx bxs-envelope"></i>
+              Liên Hệ Ngay
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/tranvonghoclaptrinh"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/h%E1%BB%AFu-v%E1%BB%8Dng-9971463ab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="mailto:tranhuuvong23092006@gmail.com" class="social-icon">
+              <i class="bx bxs-envelope"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/vong.tran.58958343/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+            >
+              <i class="bx bxl-facebook"></i>
+            </a>
+          </div>
+        </div>
+
+<div class="hero-image">
+    <div class="avatar-wrapper">
+        <div class="outer-ring-3"></div> <div class="outer-ring-2"></div>
+        <div class="outer-ring-1"></div>
+        <img src="img/my_self.png" alt="Avatar Trần Hữu Vọng" class="avatar-img" />
+        <div class="avatar-glow"></div>
+    </div>
+</div>
+
+      <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <p>Cuộn xuống</p>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Về Tôi</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Tôi sinh ngày 23/09/2006, hiện tại đang nỗ lực rèn luyện kiến thức
+              chuyên môn tại giảng đường đại học (HUIT). Với nền tảng tư duy
+              logic, tôi luôn có tinh thần học hỏi các công nghệ mới và áp dụng
+              chúng vào thực tế.
+            </p>
+            <p>
+              Kỹ năng hiện tại của tôi bao gồm: .NET Framework, HTML, CSS, JS.
+              Ngoài ra, tôi đã học qua và làm quen với C, C++, C#, Python, SQL
+              Server và SQLite. Tôi mong muốn được trải nghiệm thực tế để phát
+              triển chuyên sâu hơn trong ngành.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-box">
+              <h3>HUIT</h3>
+              <p>Đại học Công thương</p>
             </div>
-        </section>
-
-        <section class="projects-section">
-            <h2 class="section-title">Dự Án</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Web Project</h3>
-                        <span class="project-tag">Web</span>
-                    </div>
-                    <p class="project-description">Mô tả chi tiết về dự án web của bạn</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">HTML</span>
-                        <span class="tech-badge">CSS</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <a href="projects/web-projects.html" class="project-link">Xem Project</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Game Project</h3>
-                        <span class="project-tag">Game</span>
-                    </div>
-                    <p class="project-description">Mô tả chi tiết về dự án game của bạn</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">C#</span>
-                        <span class="tech-badge">Pygame</span>
-                        <span class="tech-badge">Gemini</span>
-                        <span class="tech-badge">Unity</span>
-                    </div>
-                    <a href="projects/game-projects.html" class="project-link">Xem Project</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Other Project</h3>
-                        <span class="project-tag">Other</span>
-                    </div>
-                    <p class="project-description">Mô tả chi tiết về dự án khác của bạn</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">SQL</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">API</span>
-                    </div>
-                    <a href="projects/other-projects.html" class="project-link">Xem Project</a>
-                </div>
+            <div class="stat-box">
+              <h3>IS</h3>
+              <p>Hệ thống thông tin</p>
             </div>
-        </section>
-
-        <section id="education" class="education-section">
-            <div class="education-wrapper">
-                <div class="education-sidebar">
-                    <h2 class="sidebar-title">Thông tin học vấn</h2>
-                    <div class="sidebar-info-list">
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-book'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Trạng thái</label>
-                                <span>Đang học</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-id-card'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>MSSV</label>
-                                <span>2001240566</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-group'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Lớp học</label>
-                                <span>15DHTH04</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-map'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Cơ sở</label>
-                                <span>ĐHCT TP.HCM</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-building'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Khoa</label>
-                                <span>Khoa Công nghệ Thông tin</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-briefcase'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Chuyên ngành</label>
-                                <span>Công nghệ phần mềm</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-calendar'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Khóa học</label>
-                                <span>2024</span>
-                            </div>
-                        </div>
-                        <div class="sidebar-info-item">
-                            <div class="sidebar-info-icon"><i class='bx bx-calendar-check'></i></div>
-                            <div class="sidebar-info-content">
-                                <label>Ngày vào trường</label>
-                                <span>21/8/2024</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-content">
-                    <div class="education-journey">
-                        <h3 class="journey-title">Quá Trình Học Tập</h3>
-                        
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Năm 1: Nền Tảng</h4>
-                                    <p>Học các môn cơ bản về lập trình (C, C++), toán học rời rạc, cơ sở dữ liệu SQL</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Năm 2: Mở Rộng Kỹ Năng</h4>
-                                    <p>Học lập trình web (HTML, CSS, JavaScript), lập trình Python, phương pháp phát triển phần mềm</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Năm 3: Chuyên Sâu</h4>
-                                    <p>Lập trình C#, Node.js, React, xây dựng ứng dụng web full-stack, kiến trúc phần mềm</p>
-                                </div>
-                            </div>
-                            
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Năm 4: Ứng Dụng Thực Tiễn</h4>
-                                    <p>Dự án tốt nghiệp, thực tập tại công ty, testing software, kinh nghiệm thực tế</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="education-orientation">
-                        <h3 class="orientation-title">Định Hướng & Phát Triển</h3>
-                        
-                        <div class="orientation-cards">
-                            <div class="orientation-card">
-                                <div class="card-icon"><i class='bx bx-test-tube'></i></div>
-                                <h4>QA & Testing Software</h4>
-                                <p>Nắm vững kỹ năng testing, automation testing, kiểm thử hệ thống và hiệu năng ứng dụng</p>
-                            </div>
-                            
-                            <div class="orientation-card">
-                                <div class="card-icon"><i class='bx bx-code-curly'></i></div>
-                                <h4>Full-Stack Development</h4>
-                                <p>Xây dựng ứng dụng web hoàn chỉnh từ backend (Node.js, API) đến frontend (React)</p>
-                            </div>
-                            
-                            <div class="orientation-card">
-                                <div class="card-icon"><i class='bx bxs-joystick'></i></div>
-                                <h4>Game Development</h4>
-                                <p>Phát triển game sử dụng C#, Unity Engine, Pygame để tạo những trò chơi thú vị</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat-box">
+              <h3>IT</h3>
+              <p>Sinh viên năm 2</p>
             </div>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Kỹ Năng & Định Hướng</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bxs-check-shield"></i>
+            </div>
+            <h3>Software Testing</h3>
+            <p>
+              Học tập và rèn luyện kỹ năng kiểm thử (Tester), đảm bảo chất lượng
+              phần mềm trước khi đến tay người dùng.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bxs-server"></i>
+            </div>
+            <h3>Backend & Database</h3>
+            <p>
+              Phát triển tư duy hệ thống với C#, .NET Framework, Python và quản
+              trị cơ sở dữ liệu với SQL Server, SQLite.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bx bxs-layout"></i>
+            </div>
+            <h3>Frontend & Winform</h3>
+            <p>
+              Xây dựng giao diện web cơ bản (HTML, CSS, JS) và thiết kế phần mềm
+              máy tính bằng Winform.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Các Dự Án</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="portfolio-tabs">
+          <button class="tab-btn active" data-filter="all">Tất cả</button>
+          <button class="tab-btn" data-filter="web">Web</button>
+          <button class="tab-btn" data-filter="winform">Winform</button>
+          <button class="tab-btn" data-filter="game">Game</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/1.png" alt="VoltOS Project" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>VoltOS</h4>
+                  <p>Giao diện web mô phỏng hệ điều hành với React và Vite</p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/VoltOS"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/VoltOS/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/2.png" alt="ToyStore Project" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Toy Store</h4>
+                  <p>
+                    Giao diện website thương mại điện tử dành cho cửa hàng đồ
+                    chơi
+                  </p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/ToyStore"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/ToyStore/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/3.png" alt="Shopflowers Project" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Shop Flowers</h4>
+                  <p>Dự án Frontend xây dựng giao diện cửa hàng bán hoa</p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/Shopflowers"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/Shopflowers/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/5.png" alt="TKW_05" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>TKW_05</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/TKW_05"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/TKW_05/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/6.png" alt="LunarNewYear" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Lunar New Year</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/LunarNewYear"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/LunarNewYear/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/7.png" alt="PageLearning" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Page Learning</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/PageLearning"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/PageLearning/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/8.png" alt="coreos-pro" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>CoreOS Pro</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/coreos-pro"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/coreos-pro/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/9.png" alt="DetaiQueHuong" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Đề tài Quê Hương</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/DetaiQueHuong"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/DetaiQueHuong/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/10.png" alt="TTNT" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>TTNT</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/TTNT"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/TTNT/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/11.png" alt="HomeShop" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Home Shop</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/HomeShop"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/HomeShop/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/12.png" alt="Logistics" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Logistics</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/Logistics"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/Logistics/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/13.png" alt="UniversityLoginDemo" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>University Login Demo</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/UniversityLoginDemo"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/UniversityLoginDemo/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="other">
+            <div class="portfolio-image">
+              <img src="img/14.png" alt="hdh" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Hệ điều hành (hdh)</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/hdh"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/15.png" alt="LCMS" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>LCMS</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/LCMS"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://educore-system.vercel.app/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="web">
+            <div class="portfolio-image">
+              <img src="img/16.png" alt="MMSI" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>MMSI</h4>
+                  <p></p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/MMSI"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/MMSI/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="winform">
+            <div class="portfolio-image">
+              <img src="img/17.png" alt="Winform Project" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Đồ án .NET</h4>
+                  <p>
+                    Phần mềm ứng dụng quản lý máy tính được xây dựng bằng C#
+                    Winform
+                  </p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/doanNET"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub Source"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="game">
+            <div class="portfolio-image">
+              <img src="img/18.png" alt="Pokemon Arena" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Pokemon Arena</h4>
+                  <p>
+                    Game chiến thuật đánh theo lượt (turn-based) phong cách
+                    Pokemon
+                  </p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/PokemonArena"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/PokemonArena/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Demo"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-category="game">
+            <div class="portfolio-image">
+              <img src="img/19.png" alt="Pipe Master" />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h4>Pipe Master</h4>
+                  <p>Game logic giải đố nối ống nước</p>
+                  <div class="overlay-links">
+                    <a
+                      href="https://github.com/tranvonghoclaptrinh/PipeMaster"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="GitHub Source"
+                    >
+                      <i class="bx bxl-github"></i>
+                    </a>
+                    <a
+                      href="https://tranvonghoclaptrinh.github.io/PipeMaster/"
+                      target="_blank"
+                      class="overlay-btn"
+                      title="Play Game"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Mục Tiêu Nghề Nghiệp</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="testimonials-wrapper">
+          <div class="testimonials-carousel" id="testimonialsCarousel">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i
+                  class="bx bxs-target-lock"
+                  style="color: var(--primary-color)"
+                ></i>
+              </div>
+              <p class="testimonial-text">
+                Trở thành một chuyên viên kiểm thử phần mềm chuyên nghiệp, đảm
+                bảo độ ổn định và trải nghiệm tốt nhất cho người dùng thông qua
+                Manual và Automation Testing.
+              </p>
+              <div class="testimonial-author">
+                <h4>Giai đoạn 1</h4>
+                <p>QA/QC - Tester</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">
+                <i
+                  class="bx bx-code-block"
+                  style="color: var(--primary-color)"
+                ></i>
+              </div>
+              <p class="testimonial-text">
+                Đào sâu vào hệ thống máy chủ, tối ưu hóa cơ sở dữ liệu và xây
+                dựng các API mạnh mẽ để hỗ trợ vận hành cho các nền tảng ứng
+                dụng đa dạng.
+              </p>
+              <div class="testimonial-author">
+                <h4>Giai đoạn 2</h4>
+                <p>Backend Engineer</p>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="stars">
+                <i
+                  class="bx bx-git-network-chart"
+                  style="color: var(--primary-color)"
+                ></i>
+              </div>
+              <p class="testimonial-text">
+                Kết nối giữa khách hàng và đội ngũ kỹ thuật, thiết kế cấu trúc
+                hệ thống phần mềm toàn diện, giải quyết các bài toán kinh doanh
+                phức tạp bằng công nghệ.
+              </p>
+              <div class="testimonial-author">
+                <h4>Giai đoạn Dài hạn</h4>
+                <p>Business Analyst (BA) / Solution Architect (SA)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="control-btn prev" id="prevBtn">
+              <i class="bx bxs-chevron-left"></i>
+            </button>
+            <button class="control-btn next" id="nextBtn">
+              <i class="bx bxs-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Liên Hệ</h2>
+          <div class="header-line"></div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="bx bxs-envelope"></i>
+              </div>
+              <h4>Email</h4>
+              <p>tranhuuvong23092006@gmail.com</p>
+            </div>
+
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="bx bxs-phone"></i>
+              </div>
+              <h4>Điện Thoại</h4>
+              <p>0378 133 348</p>
+            </div>
+
+            <div class="info-box">
+              <div class="info-icon">
+                <i class="bx bxs-map"></i>
+              </div>
+              <h4>Địa Chỉ</h4>
+              <p>TP. Hồ Chí Minh, Việt Nam</p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Họ và tên"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                placeholder="Email của bạn"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="tel"
+                placeholder="Số điện thoại"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Chủ đề"
+                class="form-input"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <textarea
+                placeholder="Thông điệp của bạn..."
+                class="form-input form-textarea"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large">
+              <i class="bx bxs-send"></i>
+              Gửi Tin Nhắn
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
+      <div class="footer-container">
         <div class="footer-content">
-            <div class="footer-section">
-                <h3>Mạng Xã Hội</h3>
-                <div class="social-links-footer">
-                    <a href="https://www.facebook.com/vong.tran.58958343" class="social-link" title="Facebook" target="_blank" rel="noopener noreferrer">
-                        <i class='bx bxl-facebook-circle'></i>
-                    </a>
-                    <a href="https://github.com/tranvonghoclaptrinh" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/h%E1%BB%AFu-v%E1%BB%8Dng-9971463ab/" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-                        <i class='bx bxl-linkedin-square'></i>
-                    </a>
-                    <a href="mailto:tranhuuvong23092006@gmail.com" class="social-link" title="Email" target="_blank" rel="noopener noreferrer">
-                        <i class='bx bxl-gmail'></i>
-                    </a>
-                </div>
+          <div class="footer-section">
+            <h3>Trần Hữu Vọng</h3>
+            <p>Sinh viên CNTT | Định hướng Tester & Backend Engineer</p>
+            <div class="social-links">
+              <a
+                href="https://github.com/tranvonghoclaptrinh"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+              >
+                <i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/h%E1%BB%AFu-v%E1%BB%8Dng-9971463ab/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a
+                href="mailto:tranhuuvong23092006@gmail.com"
+                class="social-icon"
+              >
+                <i class="bx bxl-gmail"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/vong.tran.58958343/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-icon"
+              >
+                <i class="bx bxl-facebook"></i>
+              </a>
             </div>
+          </div>
 
-            <div class="footer-section">
-                <h3>Liên Hệ</h3>
-                <div class="contact-footer">
-                    <a href="mailto:tranhuuvong23092006@gmail.com" class="footer-link">
-                        <i class='bx bx-envelope'></i>
-                        tranhuuvong23092006@gmail.com
-                    </a>
-                    <a href="tel:+84xxxxxxxx" class="footer-link">
-                        <i class='bx bx-phone'></i>
-                        +84 378133348
-                    </a>
-                </div>
-            </div>
+          <div class="footer-section">
+            <h4>Liên Kết</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Trang Chủ</a></li>
+              <li><a href="#about">Về Tôi</a></li>
+              <li><a href="#services">Kỹ Năng</a></li>
+              <li><a href="#portfolio">Dự Án</a></li>
+            </ul>
+          </div>
 
-            <div class="footer-section">
-                <h3>Trang Web</h3>
-                <ul class="footer-links">
-                    <li><a href="index.html" class="footer-link">Home</a></li>
-                    <li><a href="education.html" class="footer-link">Education</a></li>
-                    <li><a href="about.html" class="footer-link">About Me</a></li>
-                </ul>
-            </div>
-        </div>
+          <div class="footer-section">
+            <h4>Liên Hệ</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:tranhuuvong23092006@gmail.com"
+                  >Email: tranhuuvong23092006@gmail.com</a
+                >
+              </li>
+              <li><a href="tel:+84378133348">Điện Thoại: 0378 133 348</a></li>
+            </ul>
+          </div>
+        </div>z
 
         <div class="footer-bottom">
-            <p>&copy; 2024 Trần Hữu Vọng. All rights reserved.</p>
+          <p>&copy; 2024 Trần Hữu Vọng. Bảo lưu mọi quyền.</p>
         </div>
+      </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
